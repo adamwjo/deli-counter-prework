@@ -1,6 +1,12 @@
+
+
 def line(array)
   if array.length == 0
-    puts "The line is currently empty"
+    puts "the line is empty"
   else
-    puts array
+    number = 1
+    array.each do |i|
+      puts "The line is currently #{number}, #{i}"
+      number += 1
+    end
 end
