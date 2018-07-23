@@ -6,11 +6,9 @@ def line(array)
   else
     number = 1
     current_line = []
-    array.each do |i|
-      current_line.push("The line is currently #{number}. #{i}")
-      number += 1
-      current_line
-    end
-    puts current_line
+    array.each_with_index do |element, index|
+      index = index + 1
+      puts "The line is currently: #{index}. element"
+    end  
   end
 end
