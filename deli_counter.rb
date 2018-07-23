@@ -9,4 +9,5 @@ def line(array)
       puts "The line is currently #{number}, #{i}"
       number += 1
     end
+  end
 end
