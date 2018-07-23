@@ -7,8 +7,8 @@ def line(array)
     current_line = []
     array.each_with_index do |element, index|
       index = index + 1
-      current_line.push("#{index}. #{element}")      
+      current_line.push("#{index}. #{element}")
     end
-    
+    puts "The line is currently: #{current_line.join(" ")}"
   end
 end
