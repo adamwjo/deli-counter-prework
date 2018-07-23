@@ -18,3 +18,13 @@ def take_a_number(array, name)
   x = array.index(name) + 1
   puts "Welcome, #{name}. You are number #{x} in line."
 end
+
+def now_serving(array)
+  if array.length == 0
+    puts "There is no one"
+  else
+    x = array.index(0)
+    puts "Now serving #{x}"
+    array.shift(x)
+  end
+end
